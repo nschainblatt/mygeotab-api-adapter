@@ -379,6 +379,7 @@
                                 ' -sqlServerName ', parameters('sqlServerName'), 
                                 ' -sqlUserName ', parameters('sqlAdminUsername'), 
                                 ' -sqlPassword ', parameters('sqlAdminPassword'),
+                                ' -sqlUseDataModel2 ', parameters('sqlUseDataModel2'),
                                 ' -rootPath ', parameters('rootPath'),
                                 ' -appUser ', parameters('appUser'),
                                 ' -appPassword ', parameters('appPassword'),
