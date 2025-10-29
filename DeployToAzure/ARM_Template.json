@@ -370,7 +370,7 @@
             "typeHandlerVersion": "1.9",
             "settings": {
               "fileUris": [
-                "[concat('https://github.com/Geotab/mygeotab-api-adapter/releases/download/', parameters('versionOfMyGeotabAPIAdapter'), '/', parameters('scriptFilename'))]"
+                "https://raw.githubusercontent.com/nschainblatt/mygeotab-api-adapter/refs/heads/master/DeployToAzure/MyGeotabAPIAdapterDeploymentScript.ps1"
               ]
             },
             "protectedSettings": {
