@@ -114,10 +114,10 @@ $json = Get-Content $appSettingsFile -Raw | ConvertFrom-Json -Verbose
 $json.DatabaseSettings.DatabaseProviderType = 'SQLServer'
 $json.DatabaseSettings.UseDataModel2 = "$sqlUseDataModel2"
 $json.DatabaseSettings.DatabaseConnectionString  = "Server=$sqlServerName;Database=$sqlDatabaseName;User Id=$appUser;Password=$appPassword"
-$json.LoginSettings.MyGeotabServer  = "$loginMYGServer"
-$json.LoginSettings.MyGeotabDatabase  = "$loginMYGDatabase"
-$json.LoginSettings.MyGeotabUser  = "$loginMYGUser"
-$json.LoginSettings.MyGeotabPassword  = "$loginMYGPassword"
+# $json.LoginSettings.MyGeotabServer  = "$loginMYGServer"
+# $json.LoginSettings.MyGeotabDatabase  = "$loginMYGDatabase"
+# $json.LoginSettings.MyGeotabUser  = "$loginMYGUser"
+# $json.LoginSettings.MyGeotabPassword  = "$loginMYGPassword"
 $json.AppSettings.GeneralFeedSettings.FeedStartOption  = "$FeedStartOption"
 $json.AppSettings.GeneralFeedSettings.FeedStartSpecificTimeUTC  = "$FeedStartSpecificTimeUTC"
 $json | ConvertTo-Json -Depth 32 | Set-Content $appSettingsFile
